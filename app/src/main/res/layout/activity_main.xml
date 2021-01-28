@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/headerline"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@id/header" />
+
+
+    <RelativeLayout
+        android:id="@+id/searcher"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@id/headerline">
+
+        <ImageButton
+            android:id="@+id/closerArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@color/light_blue"
+            android:contentDescription="TODO"
+            android:onClick="reveal"
+            android:src="@drawable/ic_round_keyboard_arrow_up_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/standin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Search bar here"
+            android:textAlignment="center"
+            android:textColor="@color/dark_orange"
+            android:textSize="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_blue" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/light_blue"
+        android:contentDescription="TODO"
+        android:onClick="reveal"
+        android:src="@drawable/ic_round_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Donate App"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/botBord"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@id/botNav" />
+
+    <View
+        android:id="@+id/botNav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/dark_orange"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botBord"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@id/profile"
+        android:background="@color/dark_orange"
+        android:src="@drawable/ic_round_home_24"
+        android:onClick="goHome"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botBord"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        android:background="@color/dark_orange"
+        android:src="@drawable/ic_round_person_24"
+        android:onClick="goProfile"/>
+
+    <ImageButton
+        android:id="@+id/favs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botBord"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        android:background="@color/dark_orange"
+        android:src="@drawable/ic_round_favorite_24"
+        android:onClick="goFavs"/>
+
+    <ImageButton
+        android:id="@+id/donations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botBord"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintStart_toEndOf="@id/favs"
+        android:background="@color/dark_orange"
+        android:src="@drawable/ic_round_receipt_24"
+        android:onClick="goDonos"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
