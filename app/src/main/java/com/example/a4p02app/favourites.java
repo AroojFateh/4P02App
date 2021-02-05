@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.TranslateAnimation;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class favourites extends AppCompatActivity {
 
     boolean searcherIsDown;
     View slidingSearch;
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //initialize main page
+        //initialize favourites page
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -83,25 +82,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-    public void goHome(View view) {//will not change page if already Home
-        Toast.makeText(MainActivity.this, "You are Home", Toast.LENGTH_SHORT).show();
+    public void goDonos(View view) {
     }
 
-    public void goProfile(View view) {//will go to User profile
-        Toast.makeText(MainActivity.this, "Profile not yet completed", Toast.LENGTH_SHORT).show();
+    public void goFavs(View view) {
     }
 
-
-    public void goFavs(View view) {//will go to User favourites
-        Toast.makeText(MainActivity.this, "Favourites not yet completed", Toast.LENGTH_SHORT).show();
+    public void goProfile(View view) {
     }
 
-    public void goDonos(View view) {//will go to users completed donations
-        Toast.makeText(MainActivity.this, "Donations not yet completed", Toast.LENGTH_SHORT).show();
-    }
-
-    public void goMessage(View view) {
-        Toast.makeText(MainActivity.this, "Messages not yet implemented", Toast.LENGTH_SHORT).show();
+    public void goHome(View view) {
     }
 }
