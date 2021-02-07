@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.4P02App">
-        <activity android:name=".messages"></activity>
+        <activity android:name=".makePost"></activity>
+        <activity android:name=".donations" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".messages" />
         <activity android:name=".favourites" />
         <activity android:name=".profile" />
         <activity android:name=".MainActivity">

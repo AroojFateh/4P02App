@@ -104,4 +104,7 @@ public class MainActivity extends AppCompatActivity {
     public void goMessage(View view) {
         Toast.makeText(MainActivity.this, "Messages not yet implemented", Toast.LENGTH_SHORT).show();
     }
+
+    public void makePost(View view) {
+    }
 }

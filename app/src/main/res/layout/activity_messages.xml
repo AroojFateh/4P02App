@@ -151,7 +151,7 @@
         android:onClick="goFavs"/>
 
     <ImageButton
-        android:id="@+id/donations"
+        android:id="@+id/makePost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/botBord"
@@ -159,7 +159,7 @@
         android:layout_marginStart="36dp"
         app:layout_constraintStart_toEndOf="@id/favs"
         android:background="@color/light_orange"
-        android:src="@drawable/ic_round_receipt_24"
+        android:src="@drawable/ic_round_edit_24"
         android:onClick="goDonos"
         />
 

@@ -5,18 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class profile extends AppCompatActivity {
+public class donations extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-    }
-
-    public void goHome(View view) {
+        setContentView(R.layout.activity_donations);
     }
 
     public void goBack(View view) {
+    }
+
+    public void goHome(View view) {
     }
 
     public void goProfile(View view) {
@@ -26,5 +26,8 @@ public class profile extends AppCompatActivity {
     }
 
     public void goDonos(View view) {
+    }
+
+    public void goMessage(View view) {
     }
 }
