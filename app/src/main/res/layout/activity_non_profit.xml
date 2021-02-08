@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".makePost">
+    tools:context=".nonProfit">
 
     <View
         android:id="@+id/header"
@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="55dp"
         android:fontFamily="@font/raleway_bold"
-        android:text="Write a Post"
+        android:text="Non-Profit Name"
         android:textColor="@color/dark_blue"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +46,28 @@
         android:src="@drawable/ic_round_arrow_back_24"
         android:onClick="goBack"/>
 
+    <TextView
+        android:id="@+id/profilePic"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@color/grey"
+        android:text="Profile pic"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/profilePart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toTopOf="@id/botBord"
+        android:background="@color/purple_200"
+        android:text="Profile details"
+        android:layout_margin="20dp"
+        android:textAlignment="center"/>
+
     <View
         android:id="@+id/botBord"
         android:layout_width="match_parent"
@@ -60,13 +82,49 @@
         android:background="@color/light_orange"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/profilePart"
+        app:layout_constraintTop_toBottomOf="@id/profilePic"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/dark_blue"
+        android:contentDescription="TODO"
+        android:layout_margin="10dp" />
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/profilePart"
+        app:layout_constraintTop_toBottomOf="@id/profilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/dark_blue"
+        android:contentDescription="TODO"
+        android:layout_margin="10dp" />
+    <ImageView
+        android:id="@+id/pic3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/profilePart"
+        app:layout_constraintTop_toBottomOf="@id/profilePic"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/dark_blue"
+        android:contentDescription="TODO"
+        android:layout_margin="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/headerline"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/botBord"
-        android:text="post writing area"
-        android:textAlignment="center" />
+        android:src="@drawable/ic_round_comment_24"
+        android:layout_margin="10dp"
+        android:background="@null" />
 
     <ImageButton
         android:id="@+id/home"
@@ -101,7 +159,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="22dp"
         app:layout_constraintStart_toEndOf="@id/info"
-        android:background="@color/material_on_surface_stroke"
+        android:background="@color/light_orange"
         android:src="@drawable/ic_round_favorite_24"
         android:onClick="goFavs"/>
 
@@ -115,9 +173,9 @@
         android:layout_marginStart="22dp"
         app:layout_constraintStart_toEndOf="@id/favs"
         android:background="@color/light_orange"
-        android:src="@drawable/ic_round_edit_page"
-        android:onClick="makePost"
-        />
+        android:src="@drawable/ic_round_edit_24"
+        android:onClick="goDonos"
+        android:contentDescription="@string/todo" />
     <ImageButton
         android:id="@+id/info"
         android:layout_width="55dp"
@@ -127,10 +185,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toEndOf="@id/favs"
-        android:background="@null"
-        android:src="@drawable/ic_round_info_24"
+        android:background="@color/light_orange"
+        android:src="@drawable/ic_round_info_page"
         android:onClick="goInfo"
-        />
+        tools:ignore="ContentDescription" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

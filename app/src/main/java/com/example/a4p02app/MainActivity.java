@@ -101,10 +101,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Donations not yet completed", Toast.LENGTH_SHORT).show();
     }
 
-    public void goMessage(View view) {
-        Toast.makeText(MainActivity.this, "Messages not yet implemented", Toast.LENGTH_SHORT).show();
+    public void makePost(View view) {
+        Toast.makeText(MainActivity.this, "Posts not yet implemented", Toast.LENGTH_SHORT).show();
     }
 
-    public void makePost(View view) {
+    public void goInfo(View view) {
+        Toast.makeText(MainActivity.this, "Info page not yet implemented", Toast.LENGTH_SHORT).show();
     }
 }

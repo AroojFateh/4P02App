@@ -30,4 +30,10 @@ public class donations extends AppCompatActivity {
 
     public void goMessage(View view) {
     }
+
+    public void goInfo(View view) {
+    }
+
+    public void makePost(View view) {
+    }
 }

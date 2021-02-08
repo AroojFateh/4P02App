@@ -13,4 +13,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="donate_app">"Donate App"</string>
+    <string name="todo">TODO</string>
+    <string name="donate_title">Donate App</string>
+    <string name="search_bar_here">Search bar here</string>
+    <string name="my_donations">My Donations</string>
 </resources>
