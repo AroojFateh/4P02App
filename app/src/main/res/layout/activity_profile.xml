@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="55dp"
         android:fontFamily="@font/raleway_bold"
-        android:text="Profile"
+        android:text="@string/profile"
         android:textColor="@color/dark_blue"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,6 @@
 
 
     <ImageButton
-        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -84,14 +83,13 @@
 
 
     <Button
-        android:id="@+id/pastDonos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/profilePart"
         app:layout_constraintTop_toBottomOf="@id/profilePic"
         app:layout_constraintEnd_toEndOf="@id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Past Donations"
+        android:text="@string/past_donations"
         android:background="@color/light_orange"
         android:textColor="@color/dark_blue"
         android:padding="5dp" />
@@ -104,14 +102,13 @@
         app:layout_constraintTop_toBottomOf="@id/profilePic"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Messages"
+        android:text="@string/messages"
         android:background="@color/light_orange"
         android:textColor="@color/dark_blue"
         android:padding="5dp"
         android:layout_margin="20dp"/>
 
     <ImageButton
-        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/botBord"
@@ -120,7 +117,8 @@
         app:layout_constraintEnd_toStartOf="@id/profile"
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_home_24"
-        android:onClick="goHome"/>
+        android:onClick="goHome"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/profile"
@@ -132,7 +130,8 @@
         app:layout_constraintEnd_toStartOf="@id/info"
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_person_page"
-        android:onClick="goProfile"/>
+        android:onClick="goProfile"
+        android:contentDescription="@string/todo" />
 
 
     <ImageButton
@@ -145,11 +144,11 @@
         app:layout_constraintStart_toEndOf="@id/info"
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_favorite_24"
-        android:onClick="goFavs"/>
+        android:onClick="goFavs"
+        android:contentDescription="@string/todo" />
 
 
     <ImageButton
-        android:id="@+id/makePost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/botBord"
@@ -159,7 +158,8 @@
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_edit_24"
         android:onClick="goDonos"
-        />
+        android:contentDescription="@string/todo" />
+
     <ImageButton
         android:id="@+id/info"
         android:layout_width="55dp"
@@ -172,7 +172,7 @@
         android:background="@null"
         android:src="@drawable/ic_round_info_24"
         android:onClick="goDonos"
-        />
+        android:contentDescription="@string/todo" />
 
 
     <androidx.constraintlayout.widget.Guideline

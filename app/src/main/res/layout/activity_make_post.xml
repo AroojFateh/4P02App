@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="55dp"
         android:fontFamily="@font/raleway_bold"
-        android:text="Write a Post"
+        android:text="@string/write_a_post"
         android:textColor="@color/dark_blue"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,6 @@
 
 
     <ImageButton
-        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -69,7 +68,6 @@
         android:textAlignment="center" />
 
     <ImageButton
-        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/botBord"
@@ -90,7 +88,8 @@
         app:layout_constraintEnd_toStartOf="@id/info"
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_person_24"
-        android:onClick="goProfile"/>
+        android:onClick="goProfile"
+        android:contentDescription="@string/todo" />
 
 
     <ImageButton
@@ -103,11 +102,11 @@
         app:layout_constraintStart_toEndOf="@id/info"
         android:background="@color/material_on_surface_stroke"
         android:src="@drawable/ic_round_favorite_24"
-        android:onClick="goFavs"/>
+        android:onClick="goFavs"
+        android:contentDescription="@string/todo" />
 
 
     <ImageButton
-        android:id="@+id/makePost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/botBord"
@@ -117,7 +116,7 @@
         android:background="@color/light_orange"
         android:src="@drawable/ic_round_edit_page"
         android:onClick="makePost"
-        />
+        android:contentDescription="@string/todo" />
     <ImageButton
         android:id="@+id/info"
         android:layout_width="55dp"
@@ -130,7 +129,7 @@
         android:background="@null"
         android:src="@drawable/ic_round_info_24"
         android:onClick="goInfo"
-        />
+        android:contentDescription="@string/todo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
